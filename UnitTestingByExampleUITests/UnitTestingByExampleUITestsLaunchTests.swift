@@ -2,7 +2,7 @@
 //  UnitTestingByExampleUITestsLaunchTests.swift
 //  UnitTestingByExampleUITests
 //
-//  Created by CRLHL-KHANNSOH2 on 18/05/2023.
+//  Created by Sohail Khan on 18/05/2023.
 //
 
 import XCTest

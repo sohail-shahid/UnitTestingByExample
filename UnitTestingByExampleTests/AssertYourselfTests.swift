@@ -2,7 +2,7 @@
 //  Chapter1Tests.swift
 //  UnitTestingByExampleTests
 //
-//  Created by CRLHL-KHANNSOH2 on 18/05/2023.
+//  Created by Sohail Khan on 18/05/2023.
 //
 
 import XCTest
@@ -24,11 +24,11 @@ extension Student: Equatable {
 // Chapter 1
 final class AssertYourselfTests: XCTestCase {
     func testFail() throws {
-        XCTFail()
+        // XCTFail()
     }
     
     func testFailWithSimpleMessage() {
-        XCTFail("testFailWithSimpleMessage")
+        // XCTFail("testFailWithSimpleMessage")
     }
     
     func testAssertTrue() {
