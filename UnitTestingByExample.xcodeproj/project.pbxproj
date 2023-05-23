@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CEAF613B2A1C9EDA00E37A81 /* TestingAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF613A2A1C9EDA00E37A81 /* TestingAppDelegate.swift */; };
+		CEAF613D2A1CA2B500E37A81 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF613C2A1CA2B500E37A81 /* main.swift */; };
 		CEDC1B6B2A16A3E900BA528C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC1B6A2A16A3E900BA528C /* AppDelegate.swift */; };
 		CEDC1B6D2A16A3E900BA528C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC1B6C2A16A3E900BA528C /* SceneDelegate.swift */; };
 		CEDC1B6F2A16A3E900BA528C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC1B6E2A16A3E900BA528C /* ViewController.swift */; };
@@ -40,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CEAF613A2A1C9EDA00E37A81 /* TestingAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingAppDelegate.swift; sourceTree = "<group>"; };
+		CEAF613C2A1CA2B500E37A81 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		CEDC1B672A16A3E900BA528C /* UnitTestingByExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnitTestingByExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEDC1B6A2A16A3E900BA528C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEDC1B6C2A16A3E900BA528C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +116,7 @@
 				CEDC1B6A2A16A3E900BA528C /* AppDelegate.swift */,
 				CEDC1B6C2A16A3E900BA528C /* SceneDelegate.swift */,
 				CEDC1B6E2A16A3E900BA528C /* ViewController.swift */,
+				CEAF613C2A1CA2B500E37A81 /* main.swift */,
 				CEDC1B702A16A3E900BA528C /* Main.storyboard */,
 				CEDC1B732A16A3EB00BA528C /* Assets.xcassets */,
 				CEDC1B752A16A3EB00BA528C /* LaunchScreen.storyboard */,
@@ -126,6 +131,7 @@
 				CEDE4A1A2A18654C00000E8C /* CodeCoverage */,
 				CEF8E1702A17FD84009C0928 /* LifeCycleTests */,
 				CEDC1B9A2A16A5EB00BA528C /* AssertYourselfTests.swift */,
+				CEAF613A2A1C9EDA00E37A81 /* TestingAppDelegate.swift */,
 			);
 			path = UnitTestingByExampleTests;
 			sourceTree = "<group>";
@@ -304,6 +310,7 @@
 			files = (
 				CEF8E1722A17FDAD009C0928 /* MyClass.swift in Sources */,
 				CEDC1B6F2A16A3E900BA528C /* ViewController.swift in Sources */,
+				CEAF613D2A1CA2B500E37A81 /* main.swift in Sources */,
 				CEDC1B6B2A16A3E900BA528C /* AppDelegate.swift in Sources */,
 				CEDC1B6D2A16A3E900BA528C /* SceneDelegate.swift in Sources */,
 				CEDE4A1C2A18658300000E8C /* CoveredClass.swift in Sources */,
@@ -315,6 +322,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEF8E16E2A17F915009C0928 /* MyClassTests.swift in Sources */,
+				CEAF613B2A1C9EDA00E37A81 /* TestingAppDelegate.swift in Sources */,
 				CEDC1B9B2A16A5EB00BA528C /* AssertYourselfTests.swift in Sources */,
 				CEDE4A1E2A18661C00000E8C /* CoveredClassTests.swift in Sources */,
 			);
