@@ -16,6 +16,8 @@
 		CEDC1B8C2A16A3EB00BA528C /* UnitTestingByExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC1B8B2A16A3EB00BA528C /* UnitTestingByExampleUITests.swift */; };
 		CEDC1B8E2A16A3EB00BA528C /* UnitTestingByExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC1B8D2A16A3EB00BA528C /* UnitTestingByExampleUITestsLaunchTests.swift */; };
 		CEDC1B9B2A16A5EB00BA528C /* AssertYourselfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC1B9A2A16A5EB00BA528C /* AssertYourselfTests.swift */; };
+		CEDE4A1C2A18658300000E8C /* CoveredClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE4A1B2A18658300000E8C /* CoveredClass.swift */; };
+		CEDE4A1E2A18661C00000E8C /* CoveredClassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE4A1D2A18661C00000E8C /* CoveredClassTests.swift */; };
 		CEF8E16E2A17F915009C0928 /* MyClassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF8E16D2A17F915009C0928 /* MyClassTests.swift */; };
 		CEF8E1722A17FDAD009C0928 /* MyClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF8E1712A17FDAD009C0928 /* MyClass.swift */; };
 /* End PBXBuildFile section */
@@ -51,6 +53,8 @@
 		CEDC1B8B2A16A3EB00BA528C /* UnitTestingByExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestingByExampleUITests.swift; sourceTree = "<group>"; };
 		CEDC1B8D2A16A3EB00BA528C /* UnitTestingByExampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestingByExampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CEDC1B9A2A16A5EB00BA528C /* AssertYourselfTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssertYourselfTests.swift; sourceTree = "<group>"; };
+		CEDE4A1B2A18658300000E8C /* CoveredClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoveredClass.swift; sourceTree = "<group>"; };
+		CEDE4A1D2A18661C00000E8C /* CoveredClassTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoveredClassTests.swift; sourceTree = "<group>"; };
 		CEF8E16D2A17F915009C0928 /* MyClassTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClassTests.swift; sourceTree = "<group>"; };
 		CEF8E1712A17FDAD009C0928 /* MyClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,6 +107,7 @@
 		CEDC1B692A16A3E900BA528C /* UnitTestingByExample */ = {
 			isa = PBXGroup;
 			children = (
+				CEDE4A192A18654100000E8C /* CodeCoverage */,
 				CEF8E16F2A17FD78009C0928 /* LifeCycle */,
 				CEDC1B6A2A16A3E900BA528C /* AppDelegate.swift */,
 				CEDC1B6C2A16A3E900BA528C /* SceneDelegate.swift */,
@@ -118,6 +123,7 @@
 		CEDC1B802A16A3EB00BA528C /* UnitTestingByExampleTests */ = {
 			isa = PBXGroup;
 			children = (
+				CEDE4A1A2A18654C00000E8C /* CodeCoverage */,
 				CEF8E1702A17FD84009C0928 /* LifeCycleTests */,
 				CEDC1B9A2A16A5EB00BA528C /* AssertYourselfTests.swift */,
 			);
@@ -131,6 +137,22 @@
 				CEDC1B8D2A16A3EB00BA528C /* UnitTestingByExampleUITestsLaunchTests.swift */,
 			);
 			path = UnitTestingByExampleUITests;
+			sourceTree = "<group>";
+		};
+		CEDE4A192A18654100000E8C /* CodeCoverage */ = {
+			isa = PBXGroup;
+			children = (
+				CEDE4A1B2A18658300000E8C /* CoveredClass.swift */,
+			);
+			path = CodeCoverage;
+			sourceTree = "<group>";
+		};
+		CEDE4A1A2A18654C00000E8C /* CodeCoverage */ = {
+			isa = PBXGroup;
+			children = (
+				CEDE4A1D2A18661C00000E8C /* CoveredClassTests.swift */,
+			);
+			path = CodeCoverage;
 			sourceTree = "<group>";
 		};
 		CEF8E16F2A17FD78009C0928 /* LifeCycle */ = {
@@ -284,6 +306,7 @@
 				CEDC1B6F2A16A3E900BA528C /* ViewController.swift in Sources */,
 				CEDC1B6B2A16A3E900BA528C /* AppDelegate.swift in Sources */,
 				CEDC1B6D2A16A3E900BA528C /* SceneDelegate.swift in Sources */,
+				CEDE4A1C2A18658300000E8C /* CoveredClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +316,7 @@
 			files = (
 				CEF8E16E2A17F915009C0928 /* MyClassTests.swift in Sources */,
 				CEDC1B9B2A16A5EB00BA528C /* AssertYourselfTests.swift in Sources */,
+				CEDE4A1E2A18661C00000E8C /* CoveredClassTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
