@@ -12,5 +12,6 @@ final class CodeBasedViewControllerTests: XCTestCase {
     func testCodeBaseLoading() {
         let sut = CodeBasedViewController(data: "from test" )
         sut.loadViewIfNeeded()
+        XCTAssertEqual(sut.data, "from test")
     }
 }

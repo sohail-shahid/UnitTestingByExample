@@ -9,7 +9,7 @@ import UIKit
 
 class CodeBasedViewController: UIViewController {
 
-    private let data: String
+    let data: String
     
     init(data: String) {
         self.data = data
