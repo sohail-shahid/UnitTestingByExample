@@ -15,4 +15,10 @@ class OutletConnectionsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    @IBAction private func buttonTap() {
+        print(">> Button was tapped")
+        label.text = ">> Button was tapped"
+    }
+
 }

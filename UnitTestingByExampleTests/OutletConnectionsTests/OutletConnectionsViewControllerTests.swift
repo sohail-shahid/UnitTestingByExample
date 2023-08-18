@@ -23,4 +23,12 @@ final class OutletConnectionsViewControllerTests: XCTestCase {
         XCTAssertNotNil(stub.label, "label")
         XCTAssertNotNil(stub.button, "button")
     }
+    
+    func testTappingButton() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let stub = storyboard.instantiateViewController(identifier: "OutletConnectionsViewController") as! OutletConnectionsViewController
+        stub.loadViewIfNeeded()
+        stub.button.sendActions(for: .touchUpInside)
+        XCTAssertEqual(stub.label.text, ">> Button was tapped")
+    }
 }
