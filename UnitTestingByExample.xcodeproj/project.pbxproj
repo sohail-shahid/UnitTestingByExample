@@ -14,6 +14,8 @@
 		CE1677DA2A8F50FD00E9DD95 /* ClosureInitializerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1677D82A8F50FD00E9DD95 /* ClosureInitializerViewController.swift */; };
 		CE1677DB2A8F50FD00E9DD95 /* ClosureInitializerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE1677D92A8F50FD00E9DD95 /* ClosureInitializerViewController.xib */; };
 		CE1677DD2A8F51C600E9DD95 /* ClosureInitializerViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1677DC2A8F51C600E9DD95 /* ClosureInitializerViewControllerTests.swift */; };
+		CE1677E12A8F56A100E9DD95 /* OutletConnectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1677E02A8F56A100E9DD95 /* OutletConnectionsViewController.swift */; };
+		CE1677E32A8F571400E9DD95 /* OutletConnectionsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1677E22A8F571400E9DD95 /* OutletConnectionsViewControllerTests.swift */; };
 		CE7391DF2A2331B8003AA558 /* Analytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7391DE2A2331B8003AA558 /* Analytics.swift */; };
 		CE7391E12A2332E2003AA558 /* MySingletonAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7391E02A2332E2003AA558 /* MySingletonAnalytics.swift */; };
 		CE7391E32A2334F8003AA558 /* InstancePropertyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7391E22A2334F8003AA558 /* InstancePropertyViewController.swift */; };
@@ -69,6 +71,8 @@
 		CE1677D82A8F50FD00E9DD95 /* ClosureInitializerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosureInitializerViewController.swift; sourceTree = "<group>"; };
 		CE1677D92A8F50FD00E9DD95 /* ClosureInitializerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClosureInitializerViewController.xib; sourceTree = "<group>"; };
 		CE1677DC2A8F51C600E9DD95 /* ClosureInitializerViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosureInitializerViewControllerTests.swift; sourceTree = "<group>"; };
+		CE1677E02A8F56A100E9DD95 /* OutletConnectionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutletConnectionsViewController.swift; sourceTree = "<group>"; };
+		CE1677E22A8F571400E9DD95 /* OutletConnectionsViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutletConnectionsViewControllerTests.swift; sourceTree = "<group>"; };
 		CE7391DE2A2331B8003AA558 /* Analytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Analytics.swift; sourceTree = "<group>"; };
 		CE7391E02A2332E2003AA558 /* MySingletonAnalytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySingletonAnalytics.swift; sourceTree = "<group>"; };
 		CE7391E22A2334F8003AA558 /* InstancePropertyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstancePropertyViewController.swift; sourceTree = "<group>"; };
@@ -128,6 +132,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE1677DE2A8F561C00E9DD95 /* OutletConnectionsTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE1677E22A8F571400E9DD95 /* OutletConnectionsViewControllerTests.swift */,
+			);
+			path = OutletConnectionsTests;
+			sourceTree = "<group>";
+		};
+		CE1677DF2A8F562900E9DD95 /* OutletConnections */ = {
+			isa = PBXGroup;
+			children = (
+				CE1677E02A8F56A100E9DD95 /* OutletConnectionsViewController.swift */,
+			);
+			path = OutletConnections;
+			sourceTree = "<group>";
+		};
 		CE7391DC2A233146003AA558 /* HardDependencies */ = {
 			isa = PBXGroup;
 			children = (
@@ -201,6 +221,7 @@
 		CEDC1B692A16A3E900BA528C /* UnitTestingByExample */ = {
 			isa = PBXGroup;
 			children = (
+				CE1677DF2A8F562900E9DD95 /* OutletConnections */,
 				CE7391DC2A233146003AA558 /* HardDependencies */,
 				CEAF613F2A1D2E1300E37A81 /* LoadViewControllers */,
 				CEDE4A192A18654100000E8C /* CodeCoverage */,
@@ -219,6 +240,7 @@
 		CEDC1B802A16A3EB00BA528C /* UnitTestingByExampleTests */ = {
 			isa = PBXGroup;
 			children = (
+				CE1677DE2A8F561C00E9DD95 /* OutletConnectionsTests */,
 				CE7391DD2A233173003AA558 /* HardDependenciesTests */,
 				CEAF613E2A1D2E0800E37A81 /* LoadViewControllers */,
 				CEDE4A1A2A18654C00000E8C /* CodeCoverage */,
@@ -419,6 +441,7 @@
 				CEAF61412A1D2F0400E37A81 /* StoryboardBasedViewController.swift in Sources */,
 				CE7391E12A2332E2003AA558 /* MySingletonAnalytics.swift in Sources */,
 				CE7391DF2A2331B8003AA558 /* Analytics.swift in Sources */,
+				CE1677E12A8F56A100E9DD95 /* OutletConnectionsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +452,7 @@
 				CE1677D72A8F4F1700E9DD95 /* InstancePropertyViewControllerTests.swift in Sources */,
 				CEF8E16E2A17F915009C0928 /* MyClassTests.swift in Sources */,
 				CE1677D52A8F4B9600E9DD95 /* InstanceInitializerViewControllerTests.swift in Sources */,
+				CE1677E32A8F571400E9DD95 /* OutletConnectionsViewControllerTests.swift in Sources */,
 				CE1677DD2A8F51C600E9DD95 /* ClosureInitializerViewControllerTests.swift in Sources */,
 				CEAF61432A1D308300E37A81 /* StoryboardBasedViewControllerTests.swift in Sources */,
 				CE7391F12A234416003AA558 /* OverrideViewControllerTests.swift in Sources */,
