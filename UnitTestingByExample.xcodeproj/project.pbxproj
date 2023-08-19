@@ -16,6 +16,10 @@
 		CE1677DD2A8F51C600E9DD95 /* ClosureInitializerViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1677DC2A8F51C600E9DD95 /* ClosureInitializerViewControllerTests.swift */; };
 		CE1677E12A8F56A100E9DD95 /* OutletConnectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1677E02A8F56A100E9DD95 /* OutletConnectionsViewController.swift */; };
 		CE1677E32A8F571400E9DD95 /* OutletConnectionsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1677E22A8F571400E9DD95 /* OutletConnectionsViewControllerTests.swift */; };
+		CE1677E82A8FE1A000E9DD95 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1677E72A8FE1A000E9DD95 /* AlertViewController.swift */; };
+		CE1677EA2A8FE6CB00E9DD95 /* ViewControllerPresentationSpy.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE1677E92A8FE6CB00E9DD95 /* ViewControllerPresentationSpy.xcframework */; };
+		CE1677EC2A8FE79900E9DD95 /* ViewControllerPresentationSpy.xcframework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CE1677E92A8FE6CB00E9DD95 /* ViewControllerPresentationSpy.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CE1677EE2A8FE83500E9DD95 /* AlertViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1677ED2A8FE83500E9DD95 /* AlertViewControllerTests.swift */; };
 		CE7391DF2A2331B8003AA558 /* Analytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7391DE2A2331B8003AA558 /* Analytics.swift */; };
 		CE7391E12A2332E2003AA558 /* MySingletonAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7391E02A2332E2003AA558 /* MySingletonAnalytics.swift */; };
 		CE7391E32A2334F8003AA558 /* InstancePropertyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7391E22A2334F8003AA558 /* InstancePropertyViewController.swift */; };
@@ -63,6 +67,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		CE1677EB2A8FE76A00E9DD95 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				CE1677EC2A8FE79900E9DD95 /* ViewControllerPresentationSpy.xcframework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		CE1677D02A8F49E000E9DD95 /* InstanceInitializerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstanceInitializerViewController.swift; sourceTree = "<group>"; };
 		CE1677D12A8F49E000E9DD95 /* InstanceInitializerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InstanceInitializerViewController.xib; sourceTree = "<group>"; };
@@ -73,6 +90,9 @@
 		CE1677DC2A8F51C600E9DD95 /* ClosureInitializerViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosureInitializerViewControllerTests.swift; sourceTree = "<group>"; };
 		CE1677E02A8F56A100E9DD95 /* OutletConnectionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutletConnectionsViewController.swift; sourceTree = "<group>"; };
 		CE1677E22A8F571400E9DD95 /* OutletConnectionsViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutletConnectionsViewControllerTests.swift; sourceTree = "<group>"; };
+		CE1677E72A8FE1A000E9DD95 /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
+		CE1677E92A8FE6CB00E9DD95 /* ViewControllerPresentationSpy.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = ViewControllerPresentationSpy.xcframework; sourceTree = "<group>"; };
+		CE1677ED2A8FE83500E9DD95 /* AlertViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewControllerTests.swift; sourceTree = "<group>"; };
 		CE7391DE2A2331B8003AA558 /* Analytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Analytics.swift; sourceTree = "<group>"; };
 		CE7391E02A2332E2003AA558 /* MySingletonAnalytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySingletonAnalytics.swift; sourceTree = "<group>"; };
 		CE7391E22A2334F8003AA558 /* InstancePropertyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstancePropertyViewController.swift; sourceTree = "<group>"; };
@@ -119,6 +139,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE1677EA2A8FE6CB00E9DD95 /* ViewControllerPresentationSpy.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +167,23 @@
 				CE1677E02A8F56A100E9DD95 /* OutletConnectionsViewController.swift */,
 			);
 			path = OutletConnections;
+			sourceTree = "<group>";
+		};
+		CE1677E52A8FDD5300E9DD95 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				CE1677E72A8FE1A000E9DD95 /* AlertViewController.swift */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		CE1677E62A8FDD6D00E9DD95 /* AlertTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE1677E92A8FE6CB00E9DD95 /* ViewControllerPresentationSpy.xcframework */,
+				CE1677ED2A8FE83500E9DD95 /* AlertViewControllerTests.swift */,
+			);
+			path = AlertTests;
 			sourceTree = "<group>";
 		};
 		CE7391DC2A233146003AA558 /* HardDependencies */ = {
@@ -221,6 +259,7 @@
 		CEDC1B692A16A3E900BA528C /* UnitTestingByExample */ = {
 			isa = PBXGroup;
 			children = (
+				CE1677E52A8FDD5300E9DD95 /* Alert */,
 				CE1677DF2A8F562900E9DD95 /* OutletConnections */,
 				CE7391DC2A233146003AA558 /* HardDependencies */,
 				CEAF613F2A1D2E1300E37A81 /* LoadViewControllers */,
@@ -240,6 +279,7 @@
 		CEDC1B802A16A3EB00BA528C /* UnitTestingByExampleTests */ = {
 			isa = PBXGroup;
 			children = (
+				CE1677E62A8FDD6D00E9DD95 /* AlertTests */,
 				CE1677DE2A8F561C00E9DD95 /* OutletConnectionsTests */,
 				CE7391DD2A233173003AA558 /* HardDependenciesTests */,
 				CEAF613E2A1D2E0800E37A81 /* LoadViewControllers */,
@@ -318,6 +358,7 @@
 				CEDC1B792A16A3EB00BA528C /* Sources */,
 				CEDC1B7A2A16A3EB00BA528C /* Frameworks */,
 				CEDC1B7B2A16A3EB00BA528C /* Resources */,
+				CE1677EB2A8FE76A00E9DD95 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -434,6 +475,7 @@
 				CEDC1B6B2A16A3E900BA528C /* AppDelegate.swift in Sources */,
 				CE1677D22A8F49E000E9DD95 /* InstanceInitializerViewController.swift in Sources */,
 				CE1677DA2A8F50FD00E9DD95 /* ClosureInitializerViewController.swift in Sources */,
+				CE1677E82A8FE1A000E9DD95 /* AlertViewController.swift in Sources */,
 				CE7391E62A2336DD003AA558 /* OverrideViewController.swift in Sources */,
 				CE7391ED2A233854003AA558 /* MySingletonViewController.swift in Sources */,
 				CEDC1B6D2A16A3E900BA528C /* SceneDelegate.swift in Sources */,
@@ -457,6 +499,7 @@
 				CEAF61432A1D308300E37A81 /* StoryboardBasedViewControllerTests.swift in Sources */,
 				CE7391F12A234416003AA558 /* OverrideViewControllerTests.swift in Sources */,
 				CEAF61492A1D391B00E37A81 /* XIBBasedViewControllerTests.swift in Sources */,
+				CE1677EE2A8FE83500E9DD95 /* AlertViewControllerTests.swift in Sources */,
 				CE7391EF2A233EA3003AA558 /* MySingletonViewControllerTests.swift in Sources */,
 				CEAF614D2A1D3C7300E37A81 /* CodeBasedViewControllerTests.swift in Sources */,
 				CEDC1B9B2A16A5EB00BA528C /* AssertYourselfTests.swift in Sources */,
