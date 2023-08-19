@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE10C50A2A908E0900F703AE /* NavigationHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE10C5092A908E0900F703AE /* NavigationHomeViewController.swift */; };
+		CE10C50C2A90905A00F703AE /* CodeNextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE10C50B2A90905A00F703AE /* CodeNextViewController.swift */; };
+		CE10C50E2A9097F300F703AE /* SegueNextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE10C50D2A9097F300F703AE /* SegueNextViewController.swift */; };
+		CE10C5102A909E9C00F703AE /* NavigationHomeViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE10C50F2A909E9C00F703AE /* NavigationHomeViewControllerTests.swift */; };
 		CE1677D22A8F49E000E9DD95 /* InstanceInitializerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1677D02A8F49E000E9DD95 /* InstanceInitializerViewController.swift */; };
 		CE1677D32A8F49E000E9DD95 /* InstanceInitializerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE1677D12A8F49E000E9DD95 /* InstanceInitializerViewController.xib */; };
 		CE1677D52A8F4B9600E9DD95 /* InstanceInitializerViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1677D42A8F4B9600E9DD95 /* InstanceInitializerViewControllerTests.swift */; };
@@ -81,6 +85,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CE10C5092A908E0900F703AE /* NavigationHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationHomeViewController.swift; sourceTree = "<group>"; };
+		CE10C50B2A90905A00F703AE /* CodeNextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeNextViewController.swift; sourceTree = "<group>"; };
+		CE10C50D2A9097F300F703AE /* SegueNextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueNextViewController.swift; sourceTree = "<group>"; };
+		CE10C50F2A909E9C00F703AE /* NavigationHomeViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationHomeViewControllerTests.swift; sourceTree = "<group>"; };
 		CE1677D02A8F49E000E9DD95 /* InstanceInitializerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstanceInitializerViewController.swift; sourceTree = "<group>"; };
 		CE1677D12A8F49E000E9DD95 /* InstanceInitializerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InstanceInitializerViewController.xib; sourceTree = "<group>"; };
 		CE1677D42A8F4B9600E9DD95 /* InstanceInitializerViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstanceInitializerViewControllerTests.swift; sourceTree = "<group>"; };
@@ -153,6 +161,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE10C5072A908DA600F703AE /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				CE10C5092A908E0900F703AE /* NavigationHomeViewController.swift */,
+				CE10C50B2A90905A00F703AE /* CodeNextViewController.swift */,
+				CE10C50D2A9097F300F703AE /* SegueNextViewController.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		CE10C5082A908DB700F703AE /* NavigationTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE10C50F2A909E9C00F703AE /* NavigationHomeViewControllerTests.swift */,
+			);
+			path = NavigationTests;
+			sourceTree = "<group>";
+		};
 		CE1677DE2A8F561C00E9DD95 /* OutletConnectionsTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -259,6 +285,7 @@
 		CEDC1B692A16A3E900BA528C /* UnitTestingByExample */ = {
 			isa = PBXGroup;
 			children = (
+				CE10C5072A908DA600F703AE /* Navigation */,
 				CE1677E52A8FDD5300E9DD95 /* Alert */,
 				CE1677DF2A8F562900E9DD95 /* OutletConnections */,
 				CE7391DC2A233146003AA558 /* HardDependencies */,
@@ -279,6 +306,7 @@
 		CEDC1B802A16A3EB00BA528C /* UnitTestingByExampleTests */ = {
 			isa = PBXGroup;
 			children = (
+				CE10C5082A908DB700F703AE /* NavigationTests */,
 				CE1677E62A8FDD6D00E9DD95 /* AlertTests */,
 				CE1677DE2A8F561C00E9DD95 /* OutletConnectionsTests */,
 				CE7391DD2A233173003AA558 /* HardDependenciesTests */,
@@ -478,8 +506,11 @@
 				CE1677E82A8FE1A000E9DD95 /* AlertViewController.swift in Sources */,
 				CE7391E62A2336DD003AA558 /* OverrideViewController.swift in Sources */,
 				CE7391ED2A233854003AA558 /* MySingletonViewController.swift in Sources */,
+				CE10C50E2A9097F300F703AE /* SegueNextViewController.swift in Sources */,
+				CE10C50C2A90905A00F703AE /* CodeNextViewController.swift in Sources */,
 				CEDC1B6D2A16A3E900BA528C /* SceneDelegate.swift in Sources */,
 				CEDE4A1C2A18658300000E8C /* CoveredClass.swift in Sources */,
+				CE10C50A2A908E0900F703AE /* NavigationHomeViewController.swift in Sources */,
 				CEAF61412A1D2F0400E37A81 /* StoryboardBasedViewController.swift in Sources */,
 				CE7391E12A2332E2003AA558 /* MySingletonAnalytics.swift in Sources */,
 				CE7391DF2A2331B8003AA558 /* Analytics.swift in Sources */,
@@ -504,6 +535,7 @@
 				CEAF614D2A1D3C7300E37A81 /* CodeBasedViewControllerTests.swift in Sources */,
 				CEDC1B9B2A16A5EB00BA528C /* AssertYourselfTests.swift in Sources */,
 				CEDE4A1E2A18661C00000E8C /* CoveredClassTests.swift in Sources */,
+				CE10C5102A909E9C00F703AE /* NavigationHomeViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
