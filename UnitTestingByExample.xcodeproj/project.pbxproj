@@ -11,6 +11,9 @@
 		CE10C50C2A90905A00F703AE /* CodeNextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE10C50B2A90905A00F703AE /* CodeNextViewController.swift */; };
 		CE10C50E2A9097F300F703AE /* SegueNextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE10C50D2A9097F300F703AE /* SegueNextViewController.swift */; };
 		CE10C5102A909E9C00F703AE /* NavigationHomeViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE10C50F2A909E9C00F703AE /* NavigationHomeViewControllerTests.swift */; };
+		CE10C5142A914A6F00F703AE /* UserDefaultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE10C5132A914A6F00F703AE /* UserDefaultsViewController.swift */; };
+		CE10C5162A914A9000F703AE /* UserDefaultsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE10C5152A914A9000F703AE /* UserDefaultsViewControllerTests.swift */; };
+		CE10C5182A91534900F703AE /* FakeUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE10C5172A91534900F703AE /* FakeUserDefaults.swift */; };
 		CE1677D22A8F49E000E9DD95 /* InstanceInitializerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1677D02A8F49E000E9DD95 /* InstanceInitializerViewController.swift */; };
 		CE1677D32A8F49E000E9DD95 /* InstanceInitializerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE1677D12A8F49E000E9DD95 /* InstanceInitializerViewController.xib */; };
 		CE1677D52A8F4B9600E9DD95 /* InstanceInitializerViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1677D42A8F4B9600E9DD95 /* InstanceInitializerViewControllerTests.swift */; };
@@ -89,6 +92,9 @@
 		CE10C50B2A90905A00F703AE /* CodeNextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeNextViewController.swift; sourceTree = "<group>"; };
 		CE10C50D2A9097F300F703AE /* SegueNextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueNextViewController.swift; sourceTree = "<group>"; };
 		CE10C50F2A909E9C00F703AE /* NavigationHomeViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationHomeViewControllerTests.swift; sourceTree = "<group>"; };
+		CE10C5132A914A6F00F703AE /* UserDefaultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsViewController.swift; sourceTree = "<group>"; };
+		CE10C5152A914A9000F703AE /* UserDefaultsViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsViewControllerTests.swift; sourceTree = "<group>"; };
+		CE10C5172A91534900F703AE /* FakeUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeUserDefaults.swift; sourceTree = "<group>"; };
 		CE1677D02A8F49E000E9DD95 /* InstanceInitializerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstanceInitializerViewController.swift; sourceTree = "<group>"; };
 		CE1677D12A8F49E000E9DD95 /* InstanceInitializerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InstanceInitializerViewController.xib; sourceTree = "<group>"; };
 		CE1677D42A8F4B9600E9DD95 /* InstanceInitializerViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstanceInitializerViewControllerTests.swift; sourceTree = "<group>"; };
@@ -177,6 +183,23 @@
 				CE10C50F2A909E9C00F703AE /* NavigationHomeViewControllerTests.swift */,
 			);
 			path = NavigationTests;
+			sourceTree = "<group>";
+		};
+		CE10C5112A9149A700F703AE /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				CE10C5132A914A6F00F703AE /* UserDefaultsViewController.swift */,
+			);
+			path = UserDefaults;
+			sourceTree = "<group>";
+		};
+		CE10C5122A9149B500F703AE /* UserDefaultsTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE10C5152A914A9000F703AE /* UserDefaultsViewControllerTests.swift */,
+				CE10C5172A91534900F703AE /* FakeUserDefaults.swift */,
+			);
+			path = UserDefaultsTests;
 			sourceTree = "<group>";
 		};
 		CE1677DE2A8F561C00E9DD95 /* OutletConnectionsTests */ = {
@@ -285,6 +308,7 @@
 		CEDC1B692A16A3E900BA528C /* UnitTestingByExample */ = {
 			isa = PBXGroup;
 			children = (
+				CE10C5112A9149A700F703AE /* UserDefaults */,
 				CE10C5072A908DA600F703AE /* Navigation */,
 				CE1677E52A8FDD5300E9DD95 /* Alert */,
 				CE1677DF2A8F562900E9DD95 /* OutletConnections */,
@@ -306,6 +330,7 @@
 		CEDC1B802A16A3EB00BA528C /* UnitTestingByExampleTests */ = {
 			isa = PBXGroup;
 			children = (
+				CE10C5122A9149B500F703AE /* UserDefaultsTests */,
 				CE10C5082A908DB700F703AE /* NavigationTests */,
 				CE1677E62A8FDD6D00E9DD95 /* AlertTests */,
 				CE1677DE2A8F561C00E9DD95 /* OutletConnectionsTests */,
@@ -510,6 +535,7 @@
 				CE10C50C2A90905A00F703AE /* CodeNextViewController.swift in Sources */,
 				CEDC1B6D2A16A3E900BA528C /* SceneDelegate.swift in Sources */,
 				CEDE4A1C2A18658300000E8C /* CoveredClass.swift in Sources */,
+				CE10C5142A914A6F00F703AE /* UserDefaultsViewController.swift in Sources */,
 				CE10C50A2A908E0900F703AE /* NavigationHomeViewController.swift in Sources */,
 				CEAF61412A1D2F0400E37A81 /* StoryboardBasedViewController.swift in Sources */,
 				CE7391E12A2332E2003AA558 /* MySingletonAnalytics.swift in Sources */,
@@ -526,6 +552,7 @@
 				CEF8E16E2A17F915009C0928 /* MyClassTests.swift in Sources */,
 				CE1677D52A8F4B9600E9DD95 /* InstanceInitializerViewControllerTests.swift in Sources */,
 				CE1677E32A8F571400E9DD95 /* OutletConnectionsViewControllerTests.swift in Sources */,
+				CE10C5162A914A9000F703AE /* UserDefaultsViewControllerTests.swift in Sources */,
 				CE1677DD2A8F51C600E9DD95 /* ClosureInitializerViewControllerTests.swift in Sources */,
 				CEAF61432A1D308300E37A81 /* StoryboardBasedViewControllerTests.swift in Sources */,
 				CE7391F12A234416003AA558 /* OverrideViewControllerTests.swift in Sources */,
@@ -536,6 +563,7 @@
 				CEDC1B9B2A16A5EB00BA528C /* AssertYourselfTests.swift in Sources */,
 				CEDE4A1E2A18661C00000E8C /* CoveredClassTests.swift in Sources */,
 				CE10C5102A909E9C00F703AE /* NavigationHomeViewControllerTests.swift in Sources */,
+				CE10C5182A91534900F703AE /* FakeUserDefaults.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
