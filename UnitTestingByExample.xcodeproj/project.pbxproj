@@ -27,6 +27,9 @@
 		CE1677EA2A8FE6CB00E9DD95 /* ViewControllerPresentationSpy.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE1677E92A8FE6CB00E9DD95 /* ViewControllerPresentationSpy.xcframework */; };
 		CE1677EC2A8FE79900E9DD95 /* ViewControllerPresentationSpy.xcframework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CE1677E92A8FE6CB00E9DD95 /* ViewControllerPresentationSpy.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CE1677EE2A8FE83500E9DD95 /* AlertViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1677ED2A8FE83500E9DD95 /* AlertViewControllerTests.swift */; };
+		CE561F362A93E77000C3A481 /* NetworkRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE561F352A93E77000C3A481 /* NetworkRequestViewController.swift */; };
+		CE561F382A93EDA900C3A481 /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE561F372A93EDA900C3A481 /* MockURLSession.swift */; };
+		CE561F3A2A93EF7F00C3A481 /* NetworkRequestViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE561F392A93EF7F00C3A481 /* NetworkRequestViewControllerTests.swift */; };
 		CE7391DF2A2331B8003AA558 /* Analytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7391DE2A2331B8003AA558 /* Analytics.swift */; };
 		CE7391E12A2332E2003AA558 /* MySingletonAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7391E02A2332E2003AA558 /* MySingletonAnalytics.swift */; };
 		CE7391E32A2334F8003AA558 /* InstancePropertyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7391E22A2334F8003AA558 /* InstancePropertyViewController.swift */; };
@@ -107,6 +110,9 @@
 		CE1677E72A8FE1A000E9DD95 /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
 		CE1677E92A8FE6CB00E9DD95 /* ViewControllerPresentationSpy.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = ViewControllerPresentationSpy.xcframework; sourceTree = "<group>"; };
 		CE1677ED2A8FE83500E9DD95 /* AlertViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewControllerTests.swift; sourceTree = "<group>"; };
+		CE561F352A93E77000C3A481 /* NetworkRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestViewController.swift; sourceTree = "<group>"; };
+		CE561F372A93EDA900C3A481 /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
+		CE561F392A93EF7F00C3A481 /* NetworkRequestViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestViewControllerTests.swift; sourceTree = "<group>"; };
 		CE7391DE2A2331B8003AA558 /* Analytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Analytics.swift; sourceTree = "<group>"; };
 		CE7391E02A2332E2003AA558 /* MySingletonAnalytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySingletonAnalytics.swift; sourceTree = "<group>"; };
 		CE7391E22A2334F8003AA558 /* InstancePropertyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstancePropertyViewController.swift; sourceTree = "<group>"; };
@@ -235,6 +241,23 @@
 			path = AlertTests;
 			sourceTree = "<group>";
 		};
+		CE561F332A93E74000C3A481 /* NetworkRequest */ = {
+			isa = PBXGroup;
+			children = (
+				CE561F352A93E77000C3A481 /* NetworkRequestViewController.swift */,
+			);
+			path = NetworkRequest;
+			sourceTree = "<group>";
+		};
+		CE561F342A93E74B00C3A481 /* NetworkRequestTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE561F372A93EDA900C3A481 /* MockURLSession.swift */,
+				CE561F392A93EF7F00C3A481 /* NetworkRequestViewControllerTests.swift */,
+			);
+			path = NetworkRequestTests;
+			sourceTree = "<group>";
+		};
 		CE7391DC2A233146003AA558 /* HardDependencies */ = {
 			isa = PBXGroup;
 			children = (
@@ -308,6 +331,7 @@
 		CEDC1B692A16A3E900BA528C /* UnitTestingByExample */ = {
 			isa = PBXGroup;
 			children = (
+				CE561F332A93E74000C3A481 /* NetworkRequest */,
 				CE10C5112A9149A700F703AE /* UserDefaults */,
 				CE10C5072A908DA600F703AE /* Navigation */,
 				CE1677E52A8FDD5300E9DD95 /* Alert */,
@@ -330,6 +354,7 @@
 		CEDC1B802A16A3EB00BA528C /* UnitTestingByExampleTests */ = {
 			isa = PBXGroup;
 			children = (
+				CE561F342A93E74B00C3A481 /* NetworkRequestTests */,
 				CE10C5122A9149B500F703AE /* UserDefaultsTests */,
 				CE10C5082A908DB700F703AE /* NavigationTests */,
 				CE1677E62A8FDD6D00E9DD95 /* AlertTests */,
@@ -527,6 +552,7 @@
 				CEDC1B6F2A16A3E900BA528C /* ViewController.swift in Sources */,
 				CEDC1B6B2A16A3E900BA528C /* AppDelegate.swift in Sources */,
 				CE1677D22A8F49E000E9DD95 /* InstanceInitializerViewController.swift in Sources */,
+				CE561F362A93E77000C3A481 /* NetworkRequestViewController.swift in Sources */,
 				CE1677DA2A8F50FD00E9DD95 /* ClosureInitializerViewController.swift in Sources */,
 				CE1677E82A8FE1A000E9DD95 /* AlertViewController.swift in Sources */,
 				CE7391E62A2336DD003AA558 /* OverrideViewController.swift in Sources */,
@@ -551,7 +577,9 @@
 				CE1677D72A8F4F1700E9DD95 /* InstancePropertyViewControllerTests.swift in Sources */,
 				CEF8E16E2A17F915009C0928 /* MyClassTests.swift in Sources */,
 				CE1677D52A8F4B9600E9DD95 /* InstanceInitializerViewControllerTests.swift in Sources */,
+				CE561F3A2A93EF7F00C3A481 /* NetworkRequestViewControllerTests.swift in Sources */,
 				CE1677E32A8F571400E9DD95 /* OutletConnectionsViewControllerTests.swift in Sources */,
+				CE561F382A93EDA900C3A481 /* MockURLSession.swift in Sources */,
 				CE10C5162A914A9000F703AE /* UserDefaultsViewControllerTests.swift in Sources */,
 				CE1677DD2A8F51C600E9DD95 /* ClosureInitializerViewControllerTests.swift in Sources */,
 				CEAF61432A1D308300E37A81 /* StoryboardBasedViewControllerTests.swift in Sources */,
