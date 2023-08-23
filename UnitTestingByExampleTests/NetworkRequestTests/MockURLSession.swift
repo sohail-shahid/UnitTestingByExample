@@ -24,9 +24,11 @@ func verifyMethodCalledOnce( methodName: String, callCount: Int, describeArgumen
 private class DummyURLSessionDataTask: URLSessionDataTask {
     override func resume() {}
 }
+
 class MockURLSession: URLSessionProtocol {
     var dataTaskCallCount = 0
     var dataTaskArgsRequest: [URLRequest] = []
+    var dataTaskArgsCompletionHandler: [(Data?, URLResponse?, Error?) -> Void] = []
     
     private func dataTaskWasCalledOnce(file: StaticString = #file, line: UInt = #line) -> Bool {
         verifyMethodCalledOnce(methodName: "dataTask(with:completionHandler:)", callCount: dataTaskCallCount, describeArguments: "request: \(dataTaskArgsRequest)", file: file, line: line)
@@ -40,6 +42,7 @@ class MockURLSession: URLSessionProtocol {
     func dataTask(with request: URLRequest, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void ) -> URLSessionDataTask {
         dataTaskCallCount += 1
         dataTaskArgsRequest.append(request)
+        dataTaskArgsCompletionHandler.append(completionHandler)
         return DummyURLSessionDataTask()
     }
 }

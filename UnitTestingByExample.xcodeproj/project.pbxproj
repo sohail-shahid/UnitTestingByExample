@@ -27,6 +27,8 @@
 		CE1677EA2A8FE6CB00E9DD95 /* ViewControllerPresentationSpy.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE1677E92A8FE6CB00E9DD95 /* ViewControllerPresentationSpy.xcframework */; };
 		CE1677EC2A8FE79900E9DD95 /* ViewControllerPresentationSpy.xcframework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CE1677E92A8FE6CB00E9DD95 /* ViewControllerPresentationSpy.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CE1677EE2A8FE83500E9DD95 /* AlertViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1677ED2A8FE83500E9DD95 /* AlertViewControllerTests.swift */; };
+		CE1840832A946BE300619DB1 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1840822A946BE300619DB1 /* URLSessionProtocol.swift */; };
+		CE1840852A946C1E00619DB1 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1840842A946C1E00619DB1 /* Search.swift */; };
 		CE561F362A93E77000C3A481 /* NetworkRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE561F352A93E77000C3A481 /* NetworkRequestViewController.swift */; };
 		CE561F382A93EDA900C3A481 /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE561F372A93EDA900C3A481 /* MockURLSession.swift */; };
 		CE561F3A2A93EF7F00C3A481 /* NetworkRequestViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE561F392A93EF7F00C3A481 /* NetworkRequestViewControllerTests.swift */; };
@@ -45,6 +47,7 @@
 		CEAF61492A1D391B00E37A81 /* XIBBasedViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF61482A1D391B00E37A81 /* XIBBasedViewControllerTests.swift */; };
 		CEAF614B2A1D3BDD00E37A81 /* CodeBasedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF614A2A1D3BDD00E37A81 /* CodeBasedViewController.swift */; };
 		CEAF614D2A1D3C7300E37A81 /* CodeBasedViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF614C2A1D3C7300E37A81 /* CodeBasedViewControllerTests.swift */; };
+		CEB8BC0D2A967C09008F4648 /* TestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB8BC0C2A967C09008F4648 /* TestError.swift */; };
 		CEDC1B6B2A16A3E900BA528C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC1B6A2A16A3E900BA528C /* AppDelegate.swift */; };
 		CEDC1B6D2A16A3E900BA528C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC1B6C2A16A3E900BA528C /* SceneDelegate.swift */; };
 		CEDC1B6F2A16A3E900BA528C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC1B6E2A16A3E900BA528C /* ViewController.swift */; };
@@ -110,6 +113,8 @@
 		CE1677E72A8FE1A000E9DD95 /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
 		CE1677E92A8FE6CB00E9DD95 /* ViewControllerPresentationSpy.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = ViewControllerPresentationSpy.xcframework; sourceTree = "<group>"; };
 		CE1677ED2A8FE83500E9DD95 /* AlertViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewControllerTests.swift; sourceTree = "<group>"; };
+		CE1840822A946BE300619DB1 /* URLSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
+		CE1840842A946C1E00619DB1 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		CE561F352A93E77000C3A481 /* NetworkRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestViewController.swift; sourceTree = "<group>"; };
 		CE561F372A93EDA900C3A481 /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
 		CE561F392A93EF7F00C3A481 /* NetworkRequestViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestViewControllerTests.swift; sourceTree = "<group>"; };
@@ -128,6 +133,7 @@
 		CEAF61482A1D391B00E37A81 /* XIBBasedViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XIBBasedViewControllerTests.swift; sourceTree = "<group>"; };
 		CEAF614A2A1D3BDD00E37A81 /* CodeBasedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeBasedViewController.swift; sourceTree = "<group>"; };
 		CEAF614C2A1D3C7300E37A81 /* CodeBasedViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeBasedViewControllerTests.swift; sourceTree = "<group>"; };
+		CEB8BC0C2A967C09008F4648 /* TestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestError.swift; sourceTree = "<group>"; };
 		CEDC1B672A16A3E900BA528C /* UnitTestingByExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnitTestingByExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEDC1B6A2A16A3E900BA528C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEDC1B6C2A16A3E900BA528C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -245,6 +251,8 @@
 			isa = PBXGroup;
 			children = (
 				CE561F352A93E77000C3A481 /* NetworkRequestViewController.swift */,
+				CE1840822A946BE300619DB1 /* URLSessionProtocol.swift */,
+				CE1840842A946C1E00619DB1 /* Search.swift */,
 			);
 			path = NetworkRequest;
 			sourceTree = "<group>";
@@ -254,6 +262,7 @@
 			children = (
 				CE561F372A93EDA900C3A481 /* MockURLSession.swift */,
 				CE561F392A93EF7F00C3A481 /* NetworkRequestViewControllerTests.swift */,
+				CEB8BC0C2A967C09008F4648 /* TestError.swift */,
 			);
 			path = NetworkRequestTests;
 			sourceTree = "<group>";
@@ -308,6 +317,13 @@
 			path = LoadViewControllers;
 			sourceTree = "<group>";
 		};
+		CEB8BC0B2A963A6E008F4648 /* NetworkResponseTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetworkResponseTests;
+			sourceTree = "<group>";
+		};
 		CEDC1B5E2A16A3E900BA528C = {
 			isa = PBXGroup;
 			children = (
@@ -354,6 +370,7 @@
 		CEDC1B802A16A3EB00BA528C /* UnitTestingByExampleTests */ = {
 			isa = PBXGroup;
 			children = (
+				CEB8BC0B2A963A6E008F4648 /* NetworkResponseTests */,
 				CE561F342A93E74B00C3A481 /* NetworkRequestTests */,
 				CE10C5122A9149B500F703AE /* UserDefaultsTests */,
 				CE10C5082A908DB700F703AE /* NavigationTests */,
@@ -563,8 +580,10 @@
 				CEDE4A1C2A18658300000E8C /* CoveredClass.swift in Sources */,
 				CE10C5142A914A6F00F703AE /* UserDefaultsViewController.swift in Sources */,
 				CE10C50A2A908E0900F703AE /* NavigationHomeViewController.swift in Sources */,
+				CE1840832A946BE300619DB1 /* URLSessionProtocol.swift in Sources */,
 				CEAF61412A1D2F0400E37A81 /* StoryboardBasedViewController.swift in Sources */,
 				CE7391E12A2332E2003AA558 /* MySingletonAnalytics.swift in Sources */,
+				CE1840852A946C1E00619DB1 /* Search.swift in Sources */,
 				CE7391DF2A2331B8003AA558 /* Analytics.swift in Sources */,
 				CE1677E12A8F56A100E9DD95 /* OutletConnectionsViewController.swift in Sources */,
 			);
@@ -584,6 +603,7 @@
 				CE1677DD2A8F51C600E9DD95 /* ClosureInitializerViewControllerTests.swift in Sources */,
 				CEAF61432A1D308300E37A81 /* StoryboardBasedViewControllerTests.swift in Sources */,
 				CE7391F12A234416003AA558 /* OverrideViewControllerTests.swift in Sources */,
+				CEB8BC0D2A967C09008F4648 /* TestError.swift in Sources */,
 				CEAF61492A1D391B00E37A81 /* XIBBasedViewControllerTests.swift in Sources */,
 				CE1677EE2A8FE83500E9DD95 /* AlertViewControllerTests.swift in Sources */,
 				CE7391EF2A233EA3003AA558 /* MySingletonViewControllerTests.swift in Sources */,
