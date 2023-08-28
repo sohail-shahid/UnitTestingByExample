@@ -36,6 +36,9 @@
 		CE39BFA52A9CE2C300D5FBEA /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE39BFA42A9CE2C300D5FBEA /* TableViewController.swift */; };
 		CE39BFA72A9CE5C500D5FBEA /* TableViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE39BFA62A9CE5C500D5FBEA /* TableViewControllerTests.swift */; };
 		CE39BFAB2A9CEC2700D5FBEA /* TableviewTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE39BFAA2A9CEC2700D5FBEA /* TableviewTestHelpers.swift */; };
+		CE39BFAF2A9D0E4800D5FBEA /* SnapshotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE39BFAE2A9D0E4800D5FBEA /* SnapshotViewController.swift */; };
+		CE39BFB22A9D17C600D5FBEA /* iOSSnapshotTestCase in Frameworks */ = {isa = PBXBuildFile; productRef = CE39BFB12A9D17C600D5FBEA /* iOSSnapshotTestCase */; };
+		CE39BFB42A9D193900D5FBEA /* SnapshotViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE39BFB32A9D193900D5FBEA /* SnapshotViewControllerTests.swift */; };
 		CE561F362A93E77000C3A481 /* NetworkRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE561F352A93E77000C3A481 /* NetworkRequestViewController.swift */; };
 		CE561F382A93EDA900C3A481 /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE561F372A93EDA900C3A481 /* MockURLSession.swift */; };
 		CE561F3A2A93EF7F00C3A481 /* NetworkRequestViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE561F392A93EF7F00C3A481 /* NetworkRequestViewControllerTests.swift */; };
@@ -129,6 +132,8 @@
 		CE39BFA42A9CE2C300D5FBEA /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		CE39BFA62A9CE5C500D5FBEA /* TableViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerTests.swift; sourceTree = "<group>"; };
 		CE39BFAA2A9CEC2700D5FBEA /* TableviewTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableviewTestHelpers.swift; sourceTree = "<group>"; };
+		CE39BFAE2A9D0E4800D5FBEA /* SnapshotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotViewController.swift; sourceTree = "<group>"; };
+		CE39BFB32A9D193900D5FBEA /* SnapshotViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotViewControllerTests.swift; sourceTree = "<group>"; };
 		CE561F352A93E77000C3A481 /* NetworkRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestViewController.swift; sourceTree = "<group>"; };
 		CE561F372A93EDA900C3A481 /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
 		CE561F392A93EF7F00C3A481 /* NetworkRequestViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestViewControllerTests.swift; sourceTree = "<group>"; };
@@ -179,6 +184,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE39BFB22A9D17C600D5FBEA /* iOSSnapshotTestCase in Frameworks */,
 				CE1677EA2A8FE6CB00E9DD95 /* ViewControllerPresentationSpy.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,6 +301,22 @@
 			path = TableViewTests;
 			sourceTree = "<group>";
 		};
+		CE39BFAC2A9D0C0E00D5FBEA /* Snapshot */ = {
+			isa = PBXGroup;
+			children = (
+				CE39BFAE2A9D0E4800D5FBEA /* SnapshotViewController.swift */,
+			);
+			path = Snapshot;
+			sourceTree = "<group>";
+		};
+		CE39BFAD2A9D0C1600D5FBEA /* SnapshotTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE39BFB32A9D193900D5FBEA /* SnapshotViewControllerTests.swift */,
+			);
+			path = SnapshotTests;
+			sourceTree = "<group>";
+		};
 		CE561F332A93E74000C3A481 /* NetworkRequest */ = {
 			isa = PBXGroup;
 			children = (
@@ -388,6 +410,7 @@
 		CEDC1B692A16A3E900BA528C /* UnitTestingByExample */ = {
 			isa = PBXGroup;
 			children = (
+				CE39BFAC2A9D0C0E00D5FBEA /* Snapshot */,
 				CE39BFA22A9CE01500D5FBEA /* TableView */,
 				CE340B1D2A9927670047C79E /* TextField */,
 				CE561F332A93E74000C3A481 /* NetworkRequest */,
@@ -414,6 +437,7 @@
 		CEDC1B802A16A3EB00BA528C /* UnitTestingByExampleTests */ = {
 			isa = PBXGroup;
 			children = (
+				CE39BFAD2A9D0C1600D5FBEA /* SnapshotTests */,
 				CE39BFA32A9CE02200D5FBEA /* TableViewTests */,
 				CE340B1E2A99278B0047C79E /* TextFieldTests */,
 				CE561F342A93E74B00C3A481 /* NetworkRequestTests */,
@@ -506,6 +530,9 @@
 				CEDC1B7F2A16A3EB00BA528C /* PBXTargetDependency */,
 			);
 			name = UnitTestingByExampleTests;
+			packageProductDependencies = (
+				CE39BFB12A9D17C600D5FBEA /* iOSSnapshotTestCase */,
+			);
 			productName = UnitTestingByExampleTests;
 			productReference = CEDC1B7D2A16A3EB00BA528C /* UnitTestingByExampleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -560,6 +587,9 @@
 				Base,
 			);
 			mainGroup = CEDC1B5E2A16A3E900BA528C;
+			packageReferences = (
+				CE39BFB02A9D17C600D5FBEA /* XCRemoteSwiftPackageReference "ios-snapshot-test-case" */,
+			);
 			productRefGroup = CEDC1B682A16A3E900BA528C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -633,6 +663,7 @@
 				CE1840852A946C1E00619DB1 /* Search.swift in Sources */,
 				CE7391DF2A2331B8003AA558 /* Analytics.swift in Sources */,
 				CE39BFA52A9CE2C300D5FBEA /* TableViewController.swift in Sources */,
+				CE39BFAF2A9D0E4800D5FBEA /* SnapshotViewController.swift in Sources */,
 				CE1677E12A8F56A100E9DD95 /* OutletConnectionsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -663,6 +694,7 @@
 				CEDE4A1E2A18661C00000E8C /* CoveredClassTests.swift in Sources */,
 				CE340B262A99336F0047C79E /* TextFieldTestHelpers.swift in Sources */,
 				CE10C5102A909E9C00F703AE /* NavigationHomeViewControllerTests.swift in Sources */,
+				CE39BFB42A9D193900D5FBEA /* SnapshotViewControllerTests.swift in Sources */,
 				CE10C5182A91534900F703AE /* FakeUserDefaults.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -997,6 +1029,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CE39BFB02A9D17C600D5FBEA /* XCRemoteSwiftPackageReference "ios-snapshot-test-case" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/uber/ios-snapshot-test-case.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CE39BFB12A9D17C600D5FBEA /* iOSSnapshotTestCase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE39BFB02A9D17C600D5FBEA /* XCRemoteSwiftPackageReference "ios-snapshot-test-case" */;
+			productName = iOSSnapshotTestCase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CEDC1B5F2A16A3E900BA528C /* Project object */;
 }
