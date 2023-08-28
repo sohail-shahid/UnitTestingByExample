@@ -21,7 +21,7 @@ class TextFieldViewController: UIViewController, Storyboarding {
     }
     
     deinit {
-        print("TextFieldViewController.deinit")
+        debugPrint("TextFieldViewController.deinit")
     }
 }
 

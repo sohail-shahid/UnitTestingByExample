@@ -33,6 +33,9 @@
 		CE340B222A992D470047C79E /* TextFieldViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE340B212A992D470047C79E /* TextFieldViewControllerTests.swift */; };
 		CE340B242A992E760047C79E /* Storyboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE340B232A992E760047C79E /* Storyboarding.swift */; };
 		CE340B262A99336F0047C79E /* TextFieldTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE340B252A99336F0047C79E /* TextFieldTestHelpers.swift */; };
+		CE39BFA52A9CE2C300D5FBEA /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE39BFA42A9CE2C300D5FBEA /* TableViewController.swift */; };
+		CE39BFA72A9CE5C500D5FBEA /* TableViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE39BFA62A9CE5C500D5FBEA /* TableViewControllerTests.swift */; };
+		CE39BFAB2A9CEC2700D5FBEA /* TableviewTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE39BFAA2A9CEC2700D5FBEA /* TableviewTestHelpers.swift */; };
 		CE561F362A93E77000C3A481 /* NetworkRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE561F352A93E77000C3A481 /* NetworkRequestViewController.swift */; };
 		CE561F382A93EDA900C3A481 /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE561F372A93EDA900C3A481 /* MockURLSession.swift */; };
 		CE561F3A2A93EF7F00C3A481 /* NetworkRequestViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE561F392A93EF7F00C3A481 /* NetworkRequestViewControllerTests.swift */; };
@@ -123,6 +126,9 @@
 		CE340B212A992D470047C79E /* TextFieldViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldViewControllerTests.swift; sourceTree = "<group>"; };
 		CE340B232A992E760047C79E /* Storyboarding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboarding.swift; sourceTree = "<group>"; };
 		CE340B252A99336F0047C79E /* TextFieldTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldTestHelpers.swift; sourceTree = "<group>"; };
+		CE39BFA42A9CE2C300D5FBEA /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		CE39BFA62A9CE5C500D5FBEA /* TableViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerTests.swift; sourceTree = "<group>"; };
+		CE39BFAA2A9CEC2700D5FBEA /* TableviewTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableviewTestHelpers.swift; sourceTree = "<group>"; };
 		CE561F352A93E77000C3A481 /* NetworkRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestViewController.swift; sourceTree = "<group>"; };
 		CE561F372A93EDA900C3A481 /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
 		CE561F392A93EF7F00C3A481 /* NetworkRequestViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestViewControllerTests.swift; sourceTree = "<group>"; };
@@ -272,6 +278,23 @@
 			path = TextFieldTests;
 			sourceTree = "<group>";
 		};
+		CE39BFA22A9CE01500D5FBEA /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				CE39BFA42A9CE2C300D5FBEA /* TableViewController.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		CE39BFA32A9CE02200D5FBEA /* TableViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE39BFA62A9CE5C500D5FBEA /* TableViewControllerTests.swift */,
+				CE39BFAA2A9CEC2700D5FBEA /* TableviewTestHelpers.swift */,
+			);
+			path = TableViewTests;
+			sourceTree = "<group>";
+		};
 		CE561F332A93E74000C3A481 /* NetworkRequest */ = {
 			isa = PBXGroup;
 			children = (
@@ -365,6 +388,7 @@
 		CEDC1B692A16A3E900BA528C /* UnitTestingByExample */ = {
 			isa = PBXGroup;
 			children = (
+				CE39BFA22A9CE01500D5FBEA /* TableView */,
 				CE340B1D2A9927670047C79E /* TextField */,
 				CE561F332A93E74000C3A481 /* NetworkRequest */,
 				CE10C5112A9149A700F703AE /* UserDefaults */,
@@ -390,6 +414,7 @@
 		CEDC1B802A16A3EB00BA528C /* UnitTestingByExampleTests */ = {
 			isa = PBXGroup;
 			children = (
+				CE39BFA32A9CE02200D5FBEA /* TableViewTests */,
 				CE340B1E2A99278B0047C79E /* TextFieldTests */,
 				CE561F342A93E74B00C3A481 /* NetworkRequestTests */,
 				CE10C5122A9149B500F703AE /* UserDefaultsTests */,
@@ -607,6 +632,7 @@
 				CE7391E12A2332E2003AA558 /* MySingletonAnalytics.swift in Sources */,
 				CE1840852A946C1E00619DB1 /* Search.swift in Sources */,
 				CE7391DF2A2331B8003AA558 /* Analytics.swift in Sources */,
+				CE39BFA52A9CE2C300D5FBEA /* TableViewController.swift in Sources */,
 				CE1677E12A8F56A100E9DD95 /* OutletConnectionsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -624,10 +650,12 @@
 				CE10C5162A914A9000F703AE /* UserDefaultsViewControllerTests.swift in Sources */,
 				CE1677DD2A8F51C600E9DD95 /* ClosureInitializerViewControllerTests.swift in Sources */,
 				CE340B222A992D470047C79E /* TextFieldViewControllerTests.swift in Sources */,
+				CE39BFAB2A9CEC2700D5FBEA /* TableviewTestHelpers.swift in Sources */,
 				CEAF61432A1D308300E37A81 /* StoryboardBasedViewControllerTests.swift in Sources */,
 				CE7391F12A234416003AA558 /* OverrideViewControllerTests.swift in Sources */,
 				CEB8BC0D2A967C09008F4648 /* TestError.swift in Sources */,
 				CEAF61492A1D391B00E37A81 /* XIBBasedViewControllerTests.swift in Sources */,
+				CE39BFA72A9CE5C500D5FBEA /* TableViewControllerTests.swift in Sources */,
 				CE1677EE2A8FE83500E9DD95 /* AlertViewControllerTests.swift in Sources */,
 				CE7391EF2A233EA3003AA558 /* MySingletonViewControllerTests.swift in Sources */,
 				CEAF614D2A1D3C7300E37A81 /* CodeBasedViewControllerTests.swift in Sources */,
