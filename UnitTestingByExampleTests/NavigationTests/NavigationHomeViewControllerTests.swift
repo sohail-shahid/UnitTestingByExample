@@ -78,9 +78,4 @@ final class NavigationHomeViewControllerTests: XCTestCase {
         let segueNextVC: SegueNextViewController? = presentationVerifier.verify( animated: true, presentingViewController: sut)
         XCTAssertEqual(segueNextVC?.labelText, "Modal from segue")
     }
-    
-    private func executeRunLoop() {
-        RunLoop.current.run(until: Date())
-    }
-
 }

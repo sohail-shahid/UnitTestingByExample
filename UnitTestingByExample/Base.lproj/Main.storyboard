@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ke6-mj-BiO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YdZ-BW-MT3">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -322,6 +322,49 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dNd-44-ox7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-521" y="2867"/>
+        </scene>
+        <!--Text Field View Controller-->
+        <scene sceneID="tWS-JZ-y44">
+            <objects>
+                <viewController storyboardIdentifier="TextFieldViewController" id="YdZ-BW-MT3" customClass="TextFieldViewController" customModule="UnitTestingByExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="C3D-5l-XvW">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1ds-J0-jlS">
+                                <rect key="frame" x="150.66666666666666" y="159" width="92" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next" textContentType="username"/>
+                                <connections>
+                                    <outlet property="delegate" destination="YdZ-BW-MT3" id="KcG-bm-lOx"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="paX-gN-xnE">
+                                <rect key="frame" x="151.66666666666666" y="223" width="90" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="go" secureTextEntry="YES" textContentType="password"/>
+                                <connections>
+                                    <outlet property="delegate" destination="YdZ-BW-MT3" id="4qy-4o-yPT"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="GFV-5F-gPC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1ds-J0-jlS" firstAttribute="centerX" secondItem="GFV-5F-gPC" secondAttribute="centerX" id="hfA-Dx-BPA"/>
+                            <constraint firstItem="paX-gN-xnE" firstAttribute="top" secondItem="1ds-J0-jlS" secondAttribute="bottom" constant="30" id="ujr-zn-GRE"/>
+                            <constraint firstItem="paX-gN-xnE" firstAttribute="centerX" secondItem="GFV-5F-gPC" secondAttribute="centerX" id="xQy-zf-yfW"/>
+                            <constraint firstItem="1ds-J0-jlS" firstAttribute="top" secondItem="GFV-5F-gPC" secondAttribute="top" constant="100" id="yUX-vn-NMK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="passwordField" destination="paX-gN-xnE" id="qCA-Ki-tZJ"/>
+                        <outlet property="usernameField" destination="1ds-J0-jlS" id="Ons-4K-9x3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X4T-ZY-QdS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-540" y="3583"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
